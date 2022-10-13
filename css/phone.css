@@ -67,3 +67,9 @@
     margin: 10px 170px;
 
 }
+@media screen and (max-width: 500px){
+    
+    .btn-1{
+        margin: 10px 110px ;
+    }
+}
