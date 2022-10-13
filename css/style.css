@@ -2,40 +2,26 @@
     margin: 0;
     padding: 0;
 }
+html{
+    scroll-behavior: smooth;
+}
+:root{
+    --navbar-height: 59px
+}
 
 #navbar {
     display: flex;
     align-items: center;
     font-weight: bold;
+    /* position: sticky; */
+    position: relative;
+    top: 0px;
 }
 
-#navbar {
+/* #navbar {
     position: relative;
     height: 100px;
-}
-
-#logo {
-    margin: 20px 25px;
-}
-
-#logo img {
-    margin: 0px 10px;
-    height: 80px;
-    border-radius: 100px;
-    transition: all 0.8s ease-in-out;
-}
-
-#logo img:hover {
-    transform: scale(1.4);
-    /* it will increase size*/
-    transform: rotate(360deg);
-    /* it will rotate*/
-}
-
-#navbar ul {
-    display: flex;
-}
-
+} */
 #navbar::before {
     content: "";
     /* background: url('https://source.unsplash.com/collection/190727/1600x900')no-repeat center center/cover; */
@@ -49,10 +35,15 @@
     opacity: 0.4;
 }
 
+#navbar ul {
+    display: flex;
+}
+
+
 #navbar ul li {
     list-style: none;
     font-size: 1.3rem;
-    margin-left: 22px;
+    /* margin-left: 22px; */
 }
 
 #navbar ul li a {
@@ -60,7 +51,7 @@
     position: relative;
     padding: 3px 24px;
     text-decoration: none;
-    color: rgb(0, 0, 0);
+    color: rgb(7, 7, 7);
 }
 
 #navbar ul li a::after {
@@ -82,6 +73,24 @@
     transform: scaleX(1);
     transform-origin: bottom center;
 }
+#logo {
+    margin: 10px 34px;
+}
+
+#logo img {
+    margin: 3px 6px;
+    height: 59px;
+    border-radius: 100px;
+    transition: all 0.8s ease-in-out;
+}
+
+#logo img:hover {
+    transform: scale(1.4);
+    /* it will increase size*/
+    transform: rotate(360deg);
+    /* it will rotate*/
+}
+
 
 /* HOME SECTION */
 #home {
@@ -128,7 +137,7 @@
     -webkit-text-fill-color: transparent;
     animation: textclip 2s linear infinite;
     display: inline-block;
-    font-size: 4.4rem;
+    font-size: 2.5rem;
 }
 
 @keyframes textclip {
@@ -151,8 +160,10 @@
 
 #services .box {
     border: 2px solid red;
-    padding: 60px;
-    margin: 3px 20px;
+    padding: 34px;
+    margin: 2px 55px;
+    background: #f2f2f2;
+    margin-bottom: 20px;
     background-color: rgb(255, 255, 255);
     border-radius: 10px;
     transition: all 0.8s ease-in-out;
@@ -164,7 +175,7 @@
 }
 
 #services .box img {
-    height: 200px;
+    height: 160px;
     display: block;
     margin: auto;
     transition: all 1s ease-in-out;
@@ -180,7 +191,7 @@
 }
 
 #client-section {
-    height: 344px;
+    /* height: 344px; */
     position: relative;
 
 }
